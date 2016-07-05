@@ -26,7 +26,7 @@ void FastafileReader::ReadFastafile(string input_file_name, vector<string> &sequ
        sequences.push_back(temp_sequence);
        temp_sequence = "";
     }else{
-      if(buffer.size>=2){
+      if(buffer.size()>=2){
         if(buffer.substr(buffer.size()-2,2) == "\r\n"){
           buffer.erase(buffer.size()-2,2);
         }
