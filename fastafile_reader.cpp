@@ -1,7 +1,7 @@
 /*
  * fastafile_reader.cpp
  *
- *  Created on: 2016/6/29
+ *  Created on: 2016/7/05
  *      Author: Tsukasa Fukunaga
  */
 
@@ -26,10 +26,13 @@ void FastafileReader::ReadFastafile(string input_file_name, vector<string> &sequ
        sequences.push_back(temp_sequence);
        temp_sequence = "";
     }else{
-      if(buffer.substr(buffer.size()-2,2) == "\r\n"){
-	buffer.erase(buffer.size()-2,2);
-      }else if(buffer[buffer.size()-1] == '\r' || buffer[buffer.size()-1] == '\n'){
-	buffer.erase(buffer.size()-1,1);
+      if(buffer.size>=2){
+        if(buffer.substr(buffer.size()-2,2) == "\r\n"){
+          buffer.erase(buffer.size()-2,2);
+        }
+      }
+      if(buffer[buffer.size()-1] == '\r' || buffer[buffer.size()-1] == '\n'){
+        buffer.erase(buffer.size()-1,1);
       }
       temp_sequence = temp_sequence + buffer;
     }
