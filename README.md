@@ -2,7 +2,7 @@
 CapR calculates probabilities that each RNA base position is located within each secondary structural context for long RNA sequences. Six categories of RNA structures were taken into account, stem part (S), hairpin loop (H), Bulge loop (B), Internal loop (I), multibranch loop (M), and exterior loop (E). We defined a structural profile of an RNA base by a set of six probabilities that the base belongs to each category. 
 
 ##Version
-Version 1.1.0 (2016/06/30)
+Version 1.1.1 (2016/07/05)
 
 ##Acknowledgements
 We used a portion of the source code from the Vienna RNA package 1.8.5. We thank Dr. Ivo L. Hofacker, Vienna RNA package development group, and the Institute for Theoretical Chemistry of the University of Vienna. You can download the source code for Vienna RNA Package from http://www.tbi.univie.ac.at/RNA/
@@ -27,6 +27,11 @@ Stem 2.23919e-07 0.891229 0.999688 0.999701 0.98264 ...
 
 ##License
 This software is released under the MIT License, see LICENSE.txt.
+
+##Changelogs
+2016/07/05 Version 1.1.1 bug fix: I fixed a bug in "fastafile_reader.cpp"
+2016/06/30 Version 1.1.0 was released.
+
 
 ## Reference
 Tsukasa Fukunaga, Haruka Ozaki, Goro Terai, Kiyoshi Asai, Wataru Iwasaki, and Hisanori Kiryu. "CapR: revealing structural specificities of RNA-binding protein target recognition using CLIP-seq data." *Genome Biology*, **15**, R16. (2014)
