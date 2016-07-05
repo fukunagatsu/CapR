@@ -29,7 +29,7 @@ Stem 2.23919e-07 0.891229 0.999688 0.999701 0.98264 ...
 This software is released under the MIT License, see LICENSE.txt.
 
 ##Changelogs
-2016/07/05 Version 1.1.1 bug fix: I fixed a bug in "fastafile_reader.cpp"
+2016/07/05 Version 1.1.1 bug fix: I fixed a bug in "fastafile_reader.cpp"  
 2016/06/30 Version 1.1.0 was released.
 
 
